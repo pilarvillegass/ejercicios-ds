@@ -32,15 +32,15 @@ Base.metadata.create_all(engine)
 
 with Session(engine) as session:
     
-    depto_ciencias = Departamento(nombre="historia")
+    depto_historia = Departamento(nombre="historia")
     
     profe1 = Profesor(nombre="mar", email="mar@gmail.com", fecha_ingreso=datetime.now())
     profe2 = Profesor(nombre="martina", email="martina@gmail.com", fecha_ingreso=datetime.now())
     profe3 = Profesor(nombre="raul", email="raul@gmail.com", fecha_ingreso=datetime.now())
     
-    depto_ciencias.profesores.extend([profe1, profe2, profe3])
+    depto_historia.profesores.extend([profe1, profe2, profe3])
     
-    session.add(depto_ciencias)
+    session.add(depto_historia)
     session.commit()
 
     print("\n departamento a profesores")
