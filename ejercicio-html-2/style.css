@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #141414;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#input-tarea {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#boton-agregar {
+    padding: 8px 16px;
+    background-color: #22b424;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-agregar:hover {
+    background-color: #1ea803;
+}
+
+#lista-tareas {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-tareas li {
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lista-tareas li:hover {
+    background-color: #ffcccc;
+    text-decoration: line-through;
+}
